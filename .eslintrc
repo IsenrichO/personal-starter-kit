@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "extends": "eslint-config-postcss",
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true,
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "strict": ["error", "global"],
+
+    // Best Practices:
+    "consistent-return": [0],
+
+    // React/JSX:
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+
+    // Possible Errors:
+    "valid-jsdoc": [2],
+
+    // Stylistic Rules:
+    "comma-dangle": ["error", "always"],
+    "eol-last": [2, "always"],
+    "indent": ["error", 2],
+    "max-len": ["error", {
+      "code": 120,
+      "tabWidth": 2,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+    "quotes": [2, "single"],
+  },
+  "plugins": [
+    "react"
+  ]
+}
