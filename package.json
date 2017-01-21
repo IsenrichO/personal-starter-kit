@@ -1,0 +1,45 @@
+{
+  "name": "personal-starter-kit",
+  "version": "1.0.0",
+  "main": "webpack.config.babel.js",
+  "description": "My go-to starter repo built around my ideal tech stack",
+  "license": "MIT",
+  "scripts": {
+    "build": "NODE_ENV=production npm run clean && webpack -p",
+    "clean": "rimraf dist",
+    "dev": "webpack-dev-server --colors --inline --profile --progress",
+    "lint": "eslint src",
+    "serve": "NODE_ENV=development webpack-dev-server -d",
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack -w"
+  },
+  "keywords": [
+    "Personal Starter Kit",
+    "React",
+    "Redux",
+    "Webpack 2",
+    "PostCSS",
+    "Sass",
+    "Boilerplate",
+    "Starter Repo",
+    "Oliver Isenrich"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsenrichO/personal-starter-kit.git"
+  },
+  "homepage": "https://github.com/IsenrichO/personal-starter-kit#README.md",
+  "bugs": {
+    "url": "https://github.com/IsenrichO/personal-starter-kit/issues",
+    "email": "isenrich@yahoo.com"
+  },
+  "author": {
+    "name": "Oliver Isenrich",
+    "email": "isenrich@yahoo.com",
+    "url": "http://isenrich.io"
+  },
+  "contributors": [
+    "Oliver Isenrich <isenrich@yahoo.com> (http://isenrich.io)"
+  ],
+}
