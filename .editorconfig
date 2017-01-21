@@ -1,0 +1,51 @@
+# EditorConfig helps developers define and maintain consistent
+#  coding styles between different editors and IDEs
+#  Ref. < http://EditorConfig.org >
+
+
+# Top-Level .editorconfig settings:
+root = true
+
+# Unix-style newlines with a newline ending every file:
+[*]
+tab_width = 2
+charset = utf-8
+end_of_line = lf
+max_line_length = 120
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# JavaScript (.js, .json) language styles:
+[*.{js,json,yml}]       # Brace-expansion notation
+indent_style = space
+indent_size = 2
+
+# Python (.py) language styles:
+[*.py]
+indent_style = space
+indent_size = 4
+
+# Vim editor styles:
+[*.vim]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 60
+
+[*.md]
+trim_trailing_whitespace = true
+
+# Tab indentation (size agnostic):
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory:
+[lib/**.js]
+indent_style = space
+indent_size = 2
+
+# Matches exact config files, `package.json` or `.travis.yml`:
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

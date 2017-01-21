@@ -1,0 +1,12 @@
+
+# Browsers targeted for appropriate support of
+#  vendor-prefixed properties by Autoprefixer:
+
+# [production]
+> 1%
+Last 3 versions
+IE 7
+not IE <= 6
+
+# [development]
+Last 1 version

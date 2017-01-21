@@ -1,0 +1,15 @@
+
+# SUB-DIRECTORIES
+# ========================
+coverage
+# dist
+
+
+# LOGS & METADATA
+# ========================
+*.log
+
+
+# LIBRARIES & CACHES
+# ========================
+*.hot-update.json
